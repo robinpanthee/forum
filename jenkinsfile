@@ -5,8 +5,8 @@ pipeline {
             steps {
                 //echo"  MF"
                 sh "composer install --no-interaction"
-                sh "npm install"
-                sh "npm run prod"
+                // sh "npm install"
+                // sh "npm run prod"
             }
         }
         stage('Test') { 
