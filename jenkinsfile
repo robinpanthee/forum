@@ -20,7 +20,7 @@ pipeline {
                 
                 
                 sh 'ssh rabin@34.124.170.197 "cd /var/www/html/forum/; \
-                git reset --hard
+                git reset --hard; \
                 git pull origin main; \
                 composer install --no-interaction --no-dev; \
                 php artisan migrate --force; \
