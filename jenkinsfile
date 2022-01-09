@@ -26,6 +26,7 @@ pipeline {
                 php artisan migrate --force; \
                 php artisan cache:clear; \
                 php artisan config:cache; \
+                chmod -R 777 storage bootstrap/cache; \
                 "'
                 //create ssh connection from jenkins server to prod server
                 // pull git code from github
