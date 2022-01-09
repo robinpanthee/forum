@@ -18,7 +18,14 @@ pipeline {
         stage('Deploy') { 
             steps {
                 
-                echo "WE ARE Deploying soon DONE OK"
+                
+                sh 'ssh rabin@34.124.170.197 "cd /var/www/html/forum/; \
+                git pull origin main; \
+                composer install --no-interaction --no-dev; \
+                php artisan migrate --force; \
+                php artisan cache:clear; \
+                php artisan config:cache; \
+                "'
                 //create ssh connection from jenkins server to prod server
                 // pull git code from github
                 //run composer install
