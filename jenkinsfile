@@ -17,7 +17,14 @@ pipeline {
         }
         stage('Deploy') { 
             steps {
-                echo "Deploying MF DONE OK"
+                
+                echo "WE ARE Deploying soon DONE OK"
+                //create ssh connection from jenkins server to prod server
+                // pull git code from github
+                //run composer install
+                // run database migrations forcefully
+                // cache:clear
+                // config:cache
             }
         }
     }
