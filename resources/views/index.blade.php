@@ -5,7 +5,7 @@
     <div class="jumbotron">
         <h1>Forum App</h1>
         <p class="lead">
-            ASHU, Sleep Well darling. Good Night :) HAPPY HAPPY <br>
+            ASHU, Sleep Well darling. Good Night :) HAPPY HAPPY DHAYNYABAD<br>
             It is made for educational purpose at <a href="https://daredevops.com">Dare DevOps</a>
         </p>
         <a class="btn btn-lg btn-primary" href="{{route('posts.index')}}" role="button">Browse Posts &raquo;</a>
