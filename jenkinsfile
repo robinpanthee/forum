@@ -21,6 +21,7 @@ pipeline {
                 
                 sh 'ssh rabin@34.124.170.197 "cd /var/www/html/forum/; \
                 git pull origin main; \
+                git stash drop; \
                 composer install --no-interaction --no-dev; \
                 php artisan migrate --force; \
                 php artisan cache:clear; \
